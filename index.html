@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>@font-face {
     font-family: royal-mascow;
     src: url(RoyalMoscow-0WZRG.ttf);
@@ -212,7 +213,7 @@ header{
     justify-content: center;
 }
 .sec-3-main-para p{
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 700px;
     text-align: center;
     font-size: 20px;
@@ -256,6 +257,44 @@ header{
     font-family:sans-serif;
     color: aqua;
     margin: 0px 20px;
+}
+footer{
+    margin: 100px 0px 0px 0px;
+    display: flex;
+    border-top: 1px white solid;
+    padding-top: 20px;
+}
+footer a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.footer-comp-details{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+.footer-comp-details h1{
+    color: aqua;
+    font-family: tech;
+    letter-spacing: 4px;
+    
+}
+.footer-get-started h1 , .footer-our-company h1, .footer-Resources h1{
+    color: aqua;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-get-started  , .footer-our-company , .footer-Resources {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    
+}
+.footer-get-started li , .footer-our-company li, .footer-Resources li{
+    margin: 5px 0px;
 }</style>
 </head>
 <body>
@@ -328,5 +367,37 @@ header{
         </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-comp-details">
+            <h1>GBUY</h1>
+        </div>
+        <div class="footer-get-started">
+            <h1>Get started</h1>
+            <ul>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Referal Programs</a></li>
+            </ul>
+        </div>
+        <div class="footer-our-company">
+            <h1>Our Company</h1>
+            <ul>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Values</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-Resources">
+            <h1>Resources</h1>
+            <ul>
+                <li><a href="">Help Centre</a></li>
+                <li><a href="">Integration</a></li>
+                <li><a href="">Terms Of Services</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
