@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple banner</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-*{
+        *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -204,12 +205,14 @@ html{
     }
 }
 
-</style>
+    </style>
 </head>
 <body>
     <header id="header-top">
         <nav class="top-nav">
             <h1 id="logo-txt">JIN0</h1>
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><img src="three-dots.svg" class="three-dot" alt=""></label>
             <ul>
                 <li><a target="_blank" href="">Contacts</a></li>
                 <li><a target="_blank" href="">services</a></li>
@@ -217,7 +220,7 @@ html{
                 <li><a target="_blank" href="">Booking</a></li>
                 <li><a target="_blank" href="">login/signup</a></li>
             </ul>
-            <img src="three-dots.svg" class="three-dot" alt="">
+            
         </nav>
     </header>
     <section class="section1">
