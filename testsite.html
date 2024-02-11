@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>*{
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    
+    /* navbar style  */
+    .navigation-bar{
+        display: flex;
+        margin: 1rem 1rem;
+        font-family: 'Segoe UI';
+    }
+    .close-hamburg-btn{
+        height: 1.5rem;
+    }
+    .close-hamburg{
+        display: none;
+    }
+    .navigation-elements{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .hamburg-menu{
+        height: 2rem;
+    }
+    .hamburg-button{
+        display: none;
+    }
+    .logo-title{
+        display: flex;
+        align-items: center;
+        flex: 0;
+        justify-content: space-between;
+    }
+    .logo-title h1{
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+    .navigation-elements{
+        display: flex;
+        flex: 1;
+    }
+    .navigation-items{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .navigation-items a{
+        text-decoration: none;
+        list-style: none;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: rgb(255, 123, 0);
+    }
+    /* hover navbar  */
+    .home::after{
+        content: "";
+        display: block;
+        position: relative;
+        height: 0.2rem;
+        width: 100%;
+        transform: scaleX(1);
+        background-color:rgb(255, 123, 0) ;
+    
+    }
+    .navigation-items li{
+        transition: all 0.1s ease-in-out;
+    }
+    .navigation-items li:hover{
+        transform: scale(1.1)
+    
+    }
+    
+    
+    /* navbar hover  */
+    
+    /* navbar style  */
+    
+    /* logo styling starts */
+    
+    #main-logo{
+        height: 3.5rem;
+    }
+    
+    /* logo styling ends  */
+    
+    /* home-section  */
+    
+    
+    
+    /* home-section  */
+    
+    .home-section{
+        display: flex;
+        background-color: rgb(255, 123, 0);
+        margin: 2rem;
+        height: 60vh;
+        border-radius: 1rem;
+        overflow: hidden;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .home-hero-section{
+        display: flex;
+        align-items: center;
+    }
+    .home-image1{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    .home-image1 img{
+        mask-image: linear-gradient(-90deg,#000,rgba(0,0,0,0));
+        height: 100%;
+    
+    }
+    .home-details{
+        flex: 1;
+        color: white;
+        padding: 4rem;
+    }
+    .home-details p{
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    .home-image{
+        height: 100%;
+        width: 50%;
+    }
+    .explore-button{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .explore-button h1{
+        margin: 0rem 1rem;
+        padding-bottom: 1.5rem ;
+    }
+    .explore-button-inside{
+        display: flex;
+        width: fit-content;
+        gap: 2rem;
+    }
+    .explore-button a{
+        margin: 1rem;
+        padding: 0.5rem;
+        border: 0.16rem solid white;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .explore-button a:hover{
+        background-color: white;
+        color:  rgb(255, 123, 0);
+    }
+    
+    /* footer  */
+    .footer-container{
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI';
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .footer-container .contactus{
+        word-wrap: break-word;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    
+    }
+    .footer-container .contactus li{
+        list-style: none;
+        margin-bottom: 2%;
+    }
+    .footer-container .other-sources ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start ;
+        color: white;
+        gap: 1.5rem;
+        list-style: none;
+    }
+    .svg-footer-images{
+        padding-top: 0.5rem;
+    }
+    .footer-container .other-sources ul a{
+        text-decoration: none;
+        color: white;
+    
+    }
+    .footer-container .other-sources{
+        padding-right: 4rem;
+        padding-left: 4rem;  
+    }
+    .svg-footer-images{
+        height: 1.7rem;
+        margin-right: 1rem;
+    }
+    
+    
+    
+    
+    /* section-2 */
+    
+    .about-us{
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        padding: 3rem;
+        margin: 2rem;
+        font-family: 'Segoe UI';
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us h1{
+        font-size: 3rem;
+    }
+    .about-us .section2-container .aboutus-div{
+        margin: 3% 0%;
+    }
+    .about-us .section2-container .aboutus-div a:hover{
+        background-color:rgb(255, 123, 0) ;
+        color: white;
+    }
+    .about-us .section2-container .aboutus-div a{
+        text-decoration: none;
+        color:rgb(255, 123, 0) ;
+        border: 0.1rem solid rgb(255, 123, 0);
+        border-radius: 1rem;
+        padding: 3rem;
+        font-size: 2.5rem;
+        transition: all 0.1s ease-in-out;
+    }
+    .section2-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 4%;
+        
+        
+    }
+    
+    
+    /* section-2 */
+    
+    @media screen and (max-width: 430px){
+        html{
+            font-size: 10px;
+        }
+        .hamburg-button{
+            display: block;        
+        }
+        .logo-title h1{
+            font-size: 1rem;
+        }
+        .home-image{
+            display: none;
+        }
+        .navigation-items{
+            position: absolute;
+            background-color: whitesmoke;
+            top: 0;
+            display: flex;
+            padding: 3rem;
+        }
+        .nav-item{
+            padding: 2rem;
+        }
+        .about-us .section2-container .aboutus-div a{
+            font-size: 1.6rem;
+            padding: 1rem;
+        }
+        .about-us .section2-container .aboutus-div{
+            margin: 0% 1%;
+            margin-top: 6%;
+        }
+        .home-details{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width: 1100px){
+        html{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        html{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 930px){
+        html{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 850px){
+        .navigation-items{
+            display: none;
+        }
+        html{
+            font-size: 1px;
+        }
+        .close-hamburg{
+            display: block;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+        .navigation-items{
+            position: absolute;
+            background-color: whitesmoke;
+            top: 0;
+            padding: 3rem;
+        }
+        .nav-item{
+            padding: 3rem;
+        }
+        .navigation-bar{
+            display: flex;
+            justify-content: space-between;
+        }
+        .hamburg-button{
+            display: block;        
+        }
+        .navigation-elements{
+            justify-content: flex-end;
+        }
+        .logo-title  {
+            flex: 10;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 375px){
+        html{
+            font-size: 9px;
+        }
+    }
+    @media screen and (max-width: 320px){
+        html{
+            font-size: 7px;
+        }
+    }</style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <div class="logo-title">
+            <a href=""><img id="main-logo" src="Assets/Rashisa brown-1.jpg" alt=""></a>
+            <h1>RASHISA INFRA & DEVELOPERS PRIVATE LIMITED</h1>
+        </div>
+        
+        <div class="navigation-elements">
+            
+            <ul class="navigation-items">
+                <div class="close-hamburg"><img src="Assets/close-ellipse-svgrepo-com.svg" alt="" class="close-hamburg-btn"></div>
+                <a href=""><li class="nav-item home">Home</li></a>
+                <a href=""><li class="nav-item">About us</li></a>
+                <a href=""><li class="nav-item">Services</li></a>
+                <a href=""><li class="nav-item">Projects</li></a>
+                <a href=""><li class="nav-item">Contact us</li></a>
+                
+            </ul>
+            <div class="hamburg-button">
+                <img class="hamburg-menu" src="Assets/menu-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+       
+    </nav>
+    <section class="home-section">
+        <div class="container">
+            <div class="home-hero-section">
+                <div class="home-details">
+                    <p>The SHINE INTERIORS was established in May 2010 as a proprietor concern. As of now this concern has been promoted as RASHISA INFRA & DEVELOPERS PRIVATE LIMITED. It is a Private organization incorporated on 4th September 2023. It is classified as Non-Government Company and is registered at Registrar of Companies, Chennai .It is a fast developing Real Estate, Interior, turnkey civil and MEP contracting company. The company is engaged in the interior designing for office spaces, commercial real estate ventures, banks and retail Showrooms among others. It offers electrification and related installation works, providing furniture and other civil works like carpentry and plumbing etc.</p>
+                    <br>
+                    <br>
+                    <div class="explore-button">
+                        <h1>Explore our projects</h1>
+                    <a class="explore-button-inside">Explore Now</a>
+                    </div>
+                    
+
+                </div>
+             <div class="home-image">
+            <div class="home-image1"><img src="Assets/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg" alt=""></div>
+            
+        </div>
+                </div>
+        </div>
+            
+    </section>
+    <section class="about-us">
+        <h1>About us</h1>
+        <div class="section2-container">
+            <div class="aboutus-div"><a href="">Vision</a></div>
+            <div class="aboutus-div"><a href="">Mission</a></div>
+            <div class="aboutus-div"><a href="">Values</a></div>
+            <div class="aboutus-div"><a href="">Quality</a></div>
+            <div class="aboutus-div"><a href="">Team</a></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="contactus">
+                <h1>Contact us</h1>
+                <br>
+                <ul>
+                    <li class="address"><img class="svg-footer-images" src="Assets/address-location-map-svgrepo-com (2).svg" alt="">Plot. No.1, Karpagam Nagar Extension, Sriram Nagar, Uthangudi, Madurai - 625018, Tamil Nadu, India</li>
+                    <li><img class="svg-footer-images" src="Assets/telephone-receiver-material-svgrepo-com (1).svg" alt="">Mobile No:  +91 99414 75266</li>
+                    <li><img class="svg-footer-images"src="Assets/whatsapp-svgrepo-com.svg" alt="">WhatsAPP No: + 91 99414 75266</li>
+                    <li><img class="svg-footer-images"src="Assets/email-1572-svgrepo-com.svg" alt="">Email Id: projects@rashisagroup.com, rashisainfra@gmail.com</li>
+                    <li><img class="svg-footer-images"src="Assets/website-ui-web-svgrepo-com.svg" alt="">Website: www.rashisagroup.com</li>
+                </ul>
+            </div>
+            <div class="other-sources">
+                <h1>Other Resources</h1>
+                <br>
+                <ul>
+                    <a href=""><li>About us</li></a>
+                    <a href=""><li>Services</li></a>
+                    <a href=""><li>Projects</li></a>
+                    <a href=""><li>Contact us</li></a>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+<script>
+    const hamburgMenu = document.querySelector(".hamburg-button");
+const menu = document.querySelector(".navigation-items");
+const close = document.querySelector(".close-hamburg-btn")
+hamburgMenu.addEventListener("click",()=>{
+    console.log('clicked')
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } 
+      else {
+        menu.style.display = "block";
+      }
+})
+
+close.addEventListener("click", ()=>{
+    console.log("clicked close");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } 
+      else {
+        menu.style.display = "block";
+      }
+})
+</script>
+</body>
+</html>
